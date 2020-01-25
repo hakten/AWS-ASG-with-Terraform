@@ -85,9 +85,12 @@ terraform_0.11.14 init
 
 
 
-echo "##################"
-
-echo " Please use terraform_0.11.14"
+echo "#################"
 
 
-echo "##################"
+echo "Please use terraform_0.11.14"
+
+
+
+
+echo "#################"
