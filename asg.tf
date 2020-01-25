@@ -1,5 +1,6 @@
 module "asg" {
   source = "terraform-aws-modules/autoscaling/aws"
+  name = "something"
 
   # Launch configuration
   lc_name = "${var.lc_name}"
