@@ -1,7 +1,7 @@
 region                  =  "us-east-1"
 s3_bucket                = "task3-devenv"
 lc_name                 =     "lc-dev"
-image_id                =     "ami-062f7200baf2fa504"
+image_id                =     "ami-0543ae6c"
 instance_type           =      "t2.micro"
 device_name             =      "/dev/xvdz"
 device_type             =       "gp2"
@@ -15,9 +15,7 @@ min_size                =       "0"
 desired_capacity        =       "1"
 wait_for_capacity_timeout =     "0"
 key_name                = "devkey"
-security_group        = "sg-0a53fc5ddb42e1285"
-
-
+sec_group_name        = "allow_80_443"
 environment = "dev"
 s3_folder_project = "application"          #Will be used to set backend.tf
 s3_folder_region = "us-east-1"             #Will be used to set backend.tf
