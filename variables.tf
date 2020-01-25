@@ -7,7 +7,11 @@ variable  "device_name" {}
 variable "device_type" {}
 variable "volume_size" {}
 variable    "asg_name"  {}
-variable "vpc_zone_identifier" {}
+variable "vpc_zone_identifier1" {}
+variable "vpc_zone_identifier2" {}
+
+variable "vpc_zone_identifier3" {}
+
 variable "min_size" {}
 variable "max_size" {}
 variable "desired_capacity"{}
