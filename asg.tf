@@ -27,7 +27,7 @@ module "asg" {
 
   # Auto scaling group
   asg_name                  = "${var.asg_name}"
-  vpc_zone_identifier       = "${var.vpc_zone_identifier}"
+  vpc_zone_identifier       = "${var.vpc_zone_identifier1}"
   health_check_type         = "EC2"
   min_size                  = "${var.min_size}"
   max_size                  = "${var.max_size}"
