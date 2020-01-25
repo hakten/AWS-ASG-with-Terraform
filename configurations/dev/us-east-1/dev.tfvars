@@ -16,6 +16,7 @@ min_size                =       "0"
 desired_capacity        =       "1"
 wait_for_capacity_timeout =     "0"
 key_name                = "devkey"
+security_group        = "sg-0a53fc5ddb42e1285"
 
 
 environment = "dev"
