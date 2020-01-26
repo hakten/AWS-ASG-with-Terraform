@@ -34,16 +34,5 @@ module "asg" {
   desired_capacity          = 1
   wait_for_capacity_timeout = 0
 
-  tags = [
-    {
-      key                 = "Environment"
-      value               = "dev"
-      propagate_at_launch = true
-    },
-    {
-      key                 = "Project"
-      value               = "megasecret"
-      propagate_at_launch = true
-    },
-  ]
+
 }
