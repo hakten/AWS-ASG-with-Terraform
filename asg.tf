@@ -37,12 +37,12 @@ ebs_block_device = [
 tags = [
     {
       key                 = "Environment"
-      value               = "dev"
+      value               = "${var.tag_value1}"
       propagate_at_launch = true
     },
     {
       key                 = "Project"
-      value               = "megasecret"
+      value               = "${var.tag_value2}"
       propagate_at_launch = true
     },
   ]
