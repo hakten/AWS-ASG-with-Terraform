@@ -1,7 +1,7 @@
 region                  =  "us-east-1"
 s3_bucket                = "task3devenv"
 lc_name                 =     "lc-dev"
-image_id                =     "ami-0543ae6c"
+image_id                =     "ami-ed2cf884"
 instance_type           =      "t2.micro"
 device_name             =      "/dev/xvdz"
 device_type             =       "gp2"
