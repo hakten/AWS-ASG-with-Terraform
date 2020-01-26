@@ -16,7 +16,7 @@ module "asg" {
   health_check_type         = "EC2"
   min_size                  = "${var.min_size}"
   max_size                  = "${var.max_size}"
-  desired_capacity          = 1
+  desired_capacity          = "${var.desired_capacity}"
   wait_for_capacity_timeout = 0
 
 ebs_block_device = [
