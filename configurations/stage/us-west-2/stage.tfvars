@@ -1,5 +1,5 @@
 region                  =  "us-west-2"
-s3_bucket                = "task3-stageenv"
+s3_bucket                = "task3stageenv"
 lc_name                 =     "lc-stage"
 image_id                =     "ami-14bc5863"
 instance_type           =      "t2.micro"

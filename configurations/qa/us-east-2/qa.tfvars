@@ -1,5 +1,5 @@
 region                  =  "us-east-2"
-s3_bucket                = "task3-qaenv"
+s3_bucket                = "task3qaenv"
 lc_name                 =     "lc-qa"
 image_id                =     "ami-14bc5863"
 instance_type           =      "t2.micro"

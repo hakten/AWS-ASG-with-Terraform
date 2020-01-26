@@ -1,5 +1,5 @@
 region                  =  "eu-west-1"
-s3_bucket                = "task3-prodenv"
+s3_bucket                = "task3prodenv"
 lc_name                 =     "lc-prod"
 image_id                =     "ami-14bc5863"
 instance_type           =      "t2.micro"
