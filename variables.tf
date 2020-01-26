@@ -15,7 +15,7 @@ variable "vpc_zone_identifier3" {}
 
 variable "min_size" {}
 variable "max_size" {}
-variable "desired_capacity"{}
+variable "desired_capacity" {}
 variable "wait_for_capacity_timeout" {}
 variable "s3_bucket" {}
 variable "key_name" {}
