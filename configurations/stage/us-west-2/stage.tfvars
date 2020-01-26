@@ -12,12 +12,10 @@ vpc_zone_identifier2     =        "subnet-c8958db1"
 vpc_zone_identifier3     =      "subnet-ceabc9e5"
 max_size                =       "5"
 min_size                =       "3"
-desired_capacity        =       "1"
+desired_capacity        =       "2"
 wait_for_capacity_timeout =     "0"
 key_name                = "stagekey"
-security_group        = "sg-01218482ae5b70c3e"
-
-
+sec_group_name        = "allow_80_443"
 environment = "stage"
 s3_folder_project = "application"          #Will be used to set backend.tf
 s3_folder_region = "us-west-2"             #Will be used to set backend.tf

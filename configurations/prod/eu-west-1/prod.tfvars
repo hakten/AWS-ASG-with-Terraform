@@ -12,10 +12,10 @@ vpc_zone_identifier2     =        "subnet-d8bc3682"
 vpc_zone_identifier3     =      "subnet-fc96ceb4"
 max_size                =       "5"
 min_size                =       "3"
-desired_capacity        =       "1"
+desired_capacity        =       "2"
 wait_for_capacity_timeout =     "0"
 key_name                = "prodkey"
-security_group        = "sg-0ad061dfeb8f83074"
+security_group        = "allow_80_443"
 
 
 environment = "prod"

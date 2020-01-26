@@ -12,12 +12,10 @@ vpc_zone_identifier2     =        "subnet-05adcf56cb873abb0"
 vpc_zone_identifier3     =      "subnet-09988127cd739c70b"
 max_size                =       "5"
 min_size                =       "3"
-desired_capacity        =       "1"
+desired_capacity        =       "2"
 wait_for_capacity_timeout =     "0"
-key_name                = "qakey"
-security_group        = "sg-0b81a0eff946fb17e"
-
-
+key_name                 =      "qakey"
+sec_group_name           =       "allow_80_443"
 environment = "qa"
 s3_folder_project = "application"          #Will be used to set backend.tf
 s3_folder_region = "us-east-2"             #Will be used to set backend.tf
