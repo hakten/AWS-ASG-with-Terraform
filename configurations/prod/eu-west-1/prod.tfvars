@@ -16,8 +16,6 @@ desired_capacity        =       "3"
 wait_for_capacity_timeout =     "0"
 key_name                = "prodkey"
 security_group        = "allow_80_443"
-
-
 environment = "prod"
 s3_folder_project = "application"          #Will be used to set backend.tf
 s3_folder_region = "eu-west-1"             #Will be used to set backend.tf

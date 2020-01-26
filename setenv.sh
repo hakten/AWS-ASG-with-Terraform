@@ -88,7 +88,7 @@ terraform init
 echo "#################"
 
 
-echo "Please use terraform"
+echo "Please use terraform 12.0.0"
 
 
 
