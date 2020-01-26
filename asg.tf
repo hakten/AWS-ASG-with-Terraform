@@ -9,12 +9,6 @@ module "asg" {
   instance_type   = "${var.instance_type}"
   security_groups = ["${aws_security_group.allow_80_443.name}"]
 
-  root_block_device = [
-    {
-      volume_size = "50"
-      volume_type = "gp2"
-    },
-  ]
 
   # Auto scaling group
   asg_name                  = "${var.asg_name}"
