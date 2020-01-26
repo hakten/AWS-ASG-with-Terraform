@@ -2,7 +2,6 @@ variable "region"{}
 variable "lc_name" {}
 variable  "image_id" {}
 variable  "instance_type" {}
-variable  "security_group" {}
 variable "sec_group_name" {}
 
 variable  "device_name" {}
