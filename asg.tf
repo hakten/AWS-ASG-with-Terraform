@@ -34,6 +34,17 @@ ebs_block_device = [
       volume_type = "gp2"
     },
   ]
-
+tags = [
+    {
+      key                 = "Environment"
+      value               = "dev"
+      propagate_at_launch = true
+    },
+    {
+      key                 = "Project"
+      value               = "megasecret"
+      propagate_at_launch = true
+    },
+  ]
 
 }
