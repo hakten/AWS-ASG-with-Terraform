@@ -1,4 +1,4 @@
-variable "region"{}
+variable "region" {}
 variable "lc_name" {}
 variable  "image_id" {}
 variable  "instance_type" {}
