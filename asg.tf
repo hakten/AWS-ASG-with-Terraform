@@ -7,7 +7,7 @@ module "asg" {
 
   image_id        = "${var.image_id}"
   instance_type   = "${var.instance_type}"
-  security_groups = ["${aws_security_group.allow_80_443.name}"]
+  security_groups_ids = ["${aws_security_groups.allow_80_443.name}"]
 
 
   # Auto scaling group
