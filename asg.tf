@@ -5,8 +5,8 @@ module "asg" {
   # Launch configuration
   lc_name = "${var.lc_name}"
 
-  image_id        = ${var.image_id}
-  instance_type   = ${var.instance_type}
+  image_id        = "${var.image_id}"
+  instance_type   = "${var.instance_type}"
   security_groups = [aws_security_group.allow_80_443.id]
 
 
