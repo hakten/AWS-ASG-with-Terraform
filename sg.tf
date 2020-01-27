@@ -1,5 +1,5 @@
 resource "aws_security_group" "allow_80_443" {
-  name        = "${var.sec_group_name}"
+  sec_group_name        = "${var.sec_group_name}"
   description = "Allow TLS inbound traffic"
 
   ingress {
