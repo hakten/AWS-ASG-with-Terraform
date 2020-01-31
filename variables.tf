@@ -1,4 +1,8 @@
 variable "region" {}
+variable "environment" {}
+variable "project" {}
+
+
 variable "lc_name" {}
 variable "image_id" {}
 variable "instance_type" {}
