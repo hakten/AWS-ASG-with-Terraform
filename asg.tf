@@ -1,6 +1,6 @@
 module "asg" {
   source = "terraform-aws-modules/autoscaling/aws"
-  name = "something"
+  name   = "service"
 
   # Launch configuration
   lc_name = "${var.lc_name}"
@@ -8,6 +8,21 @@ module "asg" {
   image_id        = "${var.image_id}"
   instance_type   = "${var.instance_type}"
   security_groups = [aws_security_group.allow_80_443.id]
+  # ebs_block_device = [
+  #   {
+  #     device_name           = "/dev/xvdz"
+  #     volume_type           = "gp2"
+  #     volume_size           = "50"
+  #     delete_on_termination = true
+  #   },
+  # ]
+
+  root_block_device = [
+    {
+      volume_size = "50"
+      volume_type = "gp2"
+    },
+  ]
 
 
   # Auto scaling group
@@ -19,21 +34,7 @@ module "asg" {
   desired_capacity          = "${var.desired_capacity}"
   wait_for_capacity_timeout = 0
 
-ebs_block_device = [
-    {
-      device_name           = "/dev/xvdz"
-      volume_type           = "gp2"
-      volume_size           = "50"
-      delete_on_termination = true
-    },
-  ]
 
-  root_block_device = [
-    {
-      volume_size = "50"
-      volume_type = "gp2"
-    },
-  ]
 tags = [
     {
       key                 = "Environment"
