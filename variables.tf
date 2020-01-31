@@ -1,13 +1,13 @@
 variable "region" {}
 variable "lc_name" {}
-variable  "image_id" {}
-variable  "instance_type" {}
+variable "image_id" {}
+variable "instance_type" {}
 variable "sec_group_name" {}
 
-variable  "device_name" {}
+variable "device_name" {}
 variable "device_type" {}
 variable "volume_size" {}
-variable    "asg_name"  {}
+variable "asg_name"  {}
 variable "vpc_zone_identifier1" {}
 variable "vpc_zone_identifier2" {}
 
