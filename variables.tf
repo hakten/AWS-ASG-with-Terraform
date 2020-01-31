@@ -19,7 +19,5 @@ variable "desired_capacity" {}
 variable "wait_for_capacity_timeout" {}
 variable "s3_bucket" {}
 variable "key_name" {}
-variable "tag_value1" {}
-variable "tag_value2" {}
 
 
